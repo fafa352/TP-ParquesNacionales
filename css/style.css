@@ -10,6 +10,11 @@ header{
     width: 100%;
 
 }
+#map {
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    border: 0;
+}
 .LISTA {
     display: none; 
     position: absolute; 
@@ -68,6 +73,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 .grillaindex{
     display: grid;
@@ -82,26 +88,55 @@ header{
     "faunar faunar textodeflor "
     " textodeporque  mapa mapa";
     width: 100%;
+    margin: 2%;
+}
+@media screen and (min-width: 0px) and (max-width: 766px){
+    .grillaindex{
+        display: grid;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-column: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "imagendelparrafo imagendelparrafo  imagendelparrafo"
+        "parrafoimagen parrafoimagen  parrafoimagen"
+        "faunar faunar faunar "
+        "textodeflor textodeflor textodeflor "
+        " textodeporque  textodeporque textodeporque"
+        "mapa mapa mapa ";
+        
+        width: 100%;
+        margin: 2%;
+    }
+    #grillaindexprinc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 #parrafoimagen{
     grid-area: parrafoimagen;
     width: 100%;
-    display: flex;
     justify-content: center;
-    border: solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
 }
 #imagendelparrafo{
     grid-area: imagendelparrafo;
     width: 100%;
     display: flex;
     justify-content: center;
-    border: solid;
+    height: 100%;
 }
 #faunar{
     grid-area: faunar;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 100%;
 
 }
 #textodeflor{
@@ -109,36 +144,40 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    border: solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 #textodeporque{
     grid-area: textodeporque;
     width: 100%;
     display: flex;
     justify-content: center;
-    border: solid;
-
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 #mapa{
     grid-area: mapa;
     width: 100%;
     display: flex;
     justify-content: center;
-    border: solid;
-
 }
 .img_carrusel{
     width: 100%;
+    height: 100%;
 }
 
 .slider-box{
     width: 100%;
+    height: 100%;
     overflow:hidden;
 }
 .slider-box ul{
     display: flex;
     padding: 0;
     width: 400%;
+    height: 100%;
     animation: slide 20s infinite ease-in-out;
 }
 
@@ -150,6 +189,7 @@ header{
 }
 .slider-box img{
     width: 100%;
+    
 }
 
 @keyframes slide{
@@ -751,3 +791,440 @@ header{
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*parte1*/
+.todo{
+    width: 100%;
+    height: 100%;
+}
+#buscador{
+    padding: 1%
+}
+.contenedorimagen{
+    position: relative;
+    width: 100%;
+}
+#imagen1 {
+    width: 100%;
+}
+#imagen2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%; 
+    margin-top: 22%;
+}
+/*segunda parte*/
+
+#fondo{
+    width: 100%;
+    position: relative;
+
+}
+
+#imagenactividades{
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+
+}
+
+#titulo1{
+    font-size-adjust: inherit;
+    font-size: 500%;
+    color: #000000;
+    opacity: 1;
+    position: absolute;
+    width: 70%;
+    overflow: hidden;
+}
+
+
+
+#contenedortitulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    transform: translateY(95%);
+
+}
+
+#gradient{
+    width: 100%;
+    height: 85%;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    animation: mover 3s forwards;
+}
+
+
+
+
+
+
+
+.actividadet{
+    opacity: 0;
+    display: grid;
+    background-color: #65736A;
+    color: white;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    column-gap: 0px;
+    row-gap: 60px;
+    grid-column: 1fr 1fr ;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'avest avest'
+    'avesd avesf'
+    'excursiont excursiont'
+    'excursiond excursionf'
+    'safarit safarit'
+    'safarid safarif'
+    'ciclismot ciclismot'
+    'ciclismod ciclismof'
+    'campamentot campamentot'
+    'campamentod campamentof'
+    'senderismot senderismot'
+    'senderismod serderismof';
+}
+@media screen and (min-width: 0px) and (max-width: 766px){
+    .actividadet{
+        display: grid;
+    background-color: #613e09;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    column-gap: 0px;
+    row-gap: 10px;
+    grid-column: 1fr 1fr ;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'avest avest'
+    'avesd avesd' 
+    'avesf avesf'
+    'excursiont excursiont'
+    'excursiond excursiond' 
+    'excursionf excursionf'
+    'safarit safarit'
+    'safarid safarid' 
+    'safarif safarif'
+    'ciclismot ciclismot'
+    'ciclismod ciclismod' 
+    'ciclismof ciclismof'
+    'campamentot campamentot'
+    'campamentod campamentod' 
+    'campamentof campamentof'
+    'senderismot senderismot'
+    'senderismod senderismod' 
+    'serderismof serderismof';
+    }
+}
+
+.actividadet:hover{
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: aparecer 4s forwards; 
+}
+
+.cont-aves{
+    grid-area: avest;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-aves{
+    grid-area: avesd;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.cont-imagen-aves{
+    grid-area: avesf;
+    width: 99%;
+    border: solid;
+   
+}
+
+.cont-excursion{
+    grid-area: excursiont;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-excursion{
+    grid-area: excursiond;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.cont-imagen-excursion{
+    grid-area: excursionf;
+    width: 99%;
+    border: solid;
+}
+
+
+
+.cont-safari{
+    grid-area: safarit;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-safari{
+    grid-area: safarid;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.cont-imagen-safari{
+    grid-area: safarif;
+    width: 99%;
+    border: solid;
+}
+
+
+
+.cont-ciclismo{
+    grid-area: ciclismot;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-ciclismo{
+    grid-area: ciclismod;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.cont-imagen-ciclismo{
+    grid-area: ciclismof;
+    width: 99%;
+    border: solid;
+}
+
+
+.cont-titulos-campamento{
+    grid-area: campamentot;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-campamento{
+    grid-area: campamentod;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.cont-imagen-campamento{
+    grid-area: campamentof;
+    width: 99%;
+    border: solid;
+}
+
+
+
+.cont-titulos-senderismo{
+    grid-area: senderismot;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    transform: translateY(190%);
+    background-color: #1E402A;
+}
+
+.cont-texto-senderismo{
+    grid-area: senderismod;
+    width: 100%;
+    border: solid;
+    background-color: #1E402A;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.cont-imagen-senderismo{
+    grid-area: serderismof;
+    width: 99%;
+    border: solid;
+
+   
+}
+
+
+
+
+
+
+
+
+
+.gradient-cont{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, #ffffff ,#487357);
+}
+
+
+
+footer{
+    background-color: #487357;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont-imagen-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-30%);
+}
+
+
+.footer-imagen{
+    width: 15%;
+
+}
+
+
+
+
+
+.copyright{
+    text-align: center; 
+    margin-top: auto;
+}
+
+.botones{
+    margin-top: 5%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.lista-footer-div{
+    margin-bottom: 3%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #487357;
+    
+}
+
+.li-footer{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+    font-size: 120%;
+
+}
+
+
+.li{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.texto-actividades{
+    font-size: 200%;
+    margin: 15%;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+    
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
