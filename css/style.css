@@ -196,3 +196,564 @@ header{
     margin-top: 22%;
 }
 /*segunda parte*/
+
+   
+
+
+
+.titulofauna{
+   
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    width: 100%;
+    
+}
+
+#main__grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    background-color: #A9A9A9;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+        'foto1 foto2 foto3 foto4'
+        'foto5 foto6 foto7 foto8' ;
+
+    width: 100%;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+}
+@media screen and (min-width: 0px) and (max-width: 766px){
+    .grid-container{
+        display: grid;
+        background-color: #A9A9A9;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            'foto1' 
+            'foto2' 
+            'foto3' 
+            'foto4'
+            'foto5' 
+            'foto6' 
+            'foto7' 
+            'foto8' ;
+    
+        width: 100%;
+        grid-column-gap: 2px;
+        grid-row-gap: 5px;
+    }
+}
+
+#foto1 img {
+    
+    grid-area: foto1;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+
+#foto1 img:hover{
+    filter: brightness(50%);
+}
+#foto1 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto1:hover h4{
+    opacity: 1;
+}
+
+
+#foto2 img{
+
+    grid-area: foto2;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto2 img:hover{
+    filter: brightness(50%);
+}
+#foto2 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto2:hover h4{
+    opacity: 1;
+}
+
+
+#foto3 img{
+    
+    grid-area: foto3;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto3 img:hover{
+    filter: brightness(50%);
+}
+#foto3 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto3:hover h4{
+    opacity: 1;
+}
+
+
+#foto4 img{
+
+    grid-area: foto4;
+    width: 90%;
+    height: 90%;
+
+}
+#foto4 img:hover{
+    filter: brightness(50%);
+}
+#foto4 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto4:hover h4{
+    opacity: 1;
+}
+
+
+#foto5 img{
+   
+    grid-area: foto5;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto5 img:hover{
+    filter: brightness(50%);
+}
+#foto5 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto5:hover h4{
+    opacity: 1;
+}
+
+
+#foto6 img {
+    
+    grid-area: foto6;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto6 img:hover{
+    filter: brightness(50%);
+}
+#foto6 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto6:hover h4{
+    opacity: 1;
+}
+
+
+
+#foto7 img{
+ 
+    grid-area: foto7;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto7 img:hover{
+    filter: brightness(50%);
+}
+#foto7 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto7:hover h4{
+    opacity: 1;
+}
+
+
+
+#foto8 img{
+    
+    grid-area: foto8;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto8 img:hover{
+    filter: brightness(50%);
+}
+#foto8 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto8:hover h4{
+    opacity: 1;
+}
+
+
+.fauna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#parrafo{
+    margin: 2%;
+    font-size: xx-large;
+}
+
+.tituloflora{
+   
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    width: 100%;
+    
+}
+
+#contenedor__grid2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container2{
+    display: grid;
+    background-color: #A9A9A9;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+        'foto9 foto10 foto11 foto12'
+        'foto13 foto14 foto15 foto16' ;
+    width: 100%;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+}
+@media screen and (min-width: 0px) and (max-width: 766px){
+    .grid-container2{
+        display: grid;
+        background-color: #A9A9A9;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            'foto9' 
+            'foto10' 
+            'foto11' 
+            'foto12'
+            'foto13' 
+            'foto14' 
+            'foto15' 
+            'foto16' ;
+    
+        width: 100%;
+        grid-column-gap: 2px;
+        grid-row-gap: 5px;
+    }
+}
+
+#foto9 img {
+    
+    grid-area: foto9;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto9 img:hover{
+    filter: brightness(50%);
+}
+#foto9 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto9:hover h4{
+    opacity: 1;
+}
+
+#foto10 img{
+
+    grid-area: foto10;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto10 img:hover{
+    filter: brightness(50%);
+}
+#foto10 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto10:hover h4{
+    opacity: 1;
+}
+
+#foto11 img{
+    
+    grid-area: foto11;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto11 img:hover{
+    filter: brightness(50%);
+}
+
+#foto11 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto11:hover h4{
+    opacity: 1;
+}
+
+#foto12 img{
+
+    grid-area: foto12;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto12 img:hover{
+    filter: brightness(50%);
+}
+#foto12 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto12:hover h4{
+    opacity: 1;
+}
+
+#foto13 img{
+   
+    grid-area: foto13;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+
+}
+#foto13 img:hover{
+    filter: brightness(50%);
+}
+#foto13 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto13:hover h4{
+    opacity: 1;
+}
+
+
+#foto14 img {
+    
+    grid-area: foto14;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto14 img:hover{
+    filter: brightness(50%);
+}
+
+#foto14 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto14:hover h4{
+    opacity: 1;
+}
+
+#foto15 img{
+ 
+    grid-area: foto15;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+
+}
+#foto15 img:hover{
+    filter: brightness(50%);
+}
+
+#foto15 h4{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto15:hover h4{
+    opacity: 1;
+}
+
+#foto16 img{
+    
+    grid-area: foto16;
+    width: 90%;
+    height: 90%;
+    transition: filter 1s;
+}
+
+#foto16 h4{
+    display: flex;
+    position: absolute;
+    font-size: 150%;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+}
+
+#foto16:hover h4{
+    opacity: 1;
+}
+
+#foto16 img:hover{
+    filter: brightness(50%);
+}
+
+.flora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   
+
+#parrafo2{
+    margin: 1%;
+    font-size: xx-large;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 766px){
+    #grid-container{
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-template-areas: 
+        'foto1 foto1 foto1 foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'foto5'
+        'foto6'
+        'foto7'
+        'foto8'
+        
+    }
+}
