@@ -74,13 +74,14 @@ header{
     justify-content: center;
     column-gap: 10px;
     row-gap: 10px;
-    grid-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1fr 1fr 1fr;
     grid-row: 1fr 1fr 1fr 1fr ;
     grid-template-areas: 
-    "parrafoimagen parrafoimagen imagendelparrafo imagendelparrafo"
-    "faunar florar textodeflor textodeflor"
-    "faunar florar textodeflor textodeflor"
-    "textodeporque textodeporque mapa mapa";
+    "parrafoimagen imagendelparrafo  imagendelparrafo"
+    "parrafoimagen imagendelparrafo  imagendelparrafo"
+    "faunar faunar textodeflor "
+    " textodeporque  mapa mapa";
+    width: 100%;
 }
 #parrafoimagen{
     grid-area: parrafoimagen;
@@ -102,13 +103,6 @@ header{
     display: flex;
     justify-content: center;
 
-}
-#florar{
-    grid-area: florar;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border: solid;
 }
 #textodeflor{
     grid-area: textodeflor;
@@ -134,7 +128,7 @@ header{
 
 }
 .img_carrusel{
-    width: 80%;
+    width: 100%;
 }
 
 .slider-box{
